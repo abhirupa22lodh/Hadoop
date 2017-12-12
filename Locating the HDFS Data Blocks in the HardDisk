@@ -1,0 +1,31 @@
+Step 1: Locate the hadoop installation folder in your system and "cd" to that
+
+Step 2: Execute the following steps
+   cd hadoop/
+   ls
+   cd conf
+   ls
+   
+   vi core-site.xml 
+   
+   ==============================================================================================
+   #Find the directory name enclosed between <value> tag and locate it in the "root" directory
+    <property>
+      <name>hadoop.tmp.dir</name>
+      <value>/hadoopdata</value>
+    </property>
+    ==============================================================================================
+    
+   cd /
+   ls
+   cd hadoopdata/
+   ls
+   cd dfs/
+   ls
+   cd data/
+   ls
+   
+#Here you can see list of directories where the data is stored. I am checking the current directory
+   cd current/
+   ls
+#Open the files and see the data (You can see the data in files without the extension '.meta')
